@@ -52,7 +52,9 @@ python app.py
 
 ### Usage
 
-Here is how to use Flask Relocator in your project:
+First make a copy of `.env.example` to `.env` and populate the appropriate port number and new server location.
+
+Add Flask Relocator in your app:
 
 ```python
 from relocator.relocator import relocator_blueprint

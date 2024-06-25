@@ -71,4 +71,4 @@ This project is licensed under the MIT License
 ## Acknowledgments
 
 - Me
-- Spirito@LottieFiles
+- [Spirito@LottieFiles](https://lottiefiles.com/j6p1augtuu5fbu5y)

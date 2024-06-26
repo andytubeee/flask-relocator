@@ -24,11 +24,28 @@
             height: 50vh;
         }
     </style>
+
+    {% if redirect and new_location %}
+    <meta http-equiv="refresh" content="5;url={{ new_location }}">
+    <script type="text/javascript">
+        setTimeout(function () {
+            window.location.href = "{{ new_location }}";
+        }, 5000);
+        setTimeout(function () {
+            let counter = 5;
+            setInterval(() => {
+                counter--;
+                document.getElementById('counter').innerText = `Redirecting in ${counter} seconds...`;
+            }, 1000);
+        }, 1000);
+    </script>
+    {% endif %}
 </head>
 
 <body>
     <div id="lottie"></div>
     <h1>{{ message|safe }}</h1>
+    <p id="counter"></p>
 
     <script>
         lottie.loadAnimation({
